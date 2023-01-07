@@ -1,6 +1,9 @@
 mixed-port: 7890
 allow-lan: true
 external-controller: 127.0.0.1:51558
+hosts:
+  services.googleapis.cn: 142.250.196.131
+  www.google.cn: 142.250.196.131
 profile:
   tracing: true
 experimental:
