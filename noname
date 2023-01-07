@@ -166,4 +166,5 @@ rules:
   - DOMAIN-SUFFIX,hdslb.com,Bilibili
   - DOMAIN-SUFFIX,im9.com,Bilibili
   - DOMAIN,upos-hz-mirrorakam.akamaized.net,Bilibili
+  - GEOIP,CN,DIRECT
   - MATCH,Proxy
