@@ -29,6 +29,16 @@ proxy-providers:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
+  SG:
+    type: http
+    path: ./profiles/proxies/SG.yaml
+    url: https://api.fuqing.ch/sub?target=clash&emoji=true&udp=true&scv=true&new_name=true&filename=WD_Trojan&url=https%3A%2F%2Ffuqing.ch%2Fsubscribe%2Fymamb-ri9b73uz
+    interval: 3600
+    filter: Singapore
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
   US:
     type: http
     path: ./profiles/proxies/United States.yaml
@@ -80,7 +90,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     use:
-      - Nodes
+      - SG
   - name: Apple
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -106,6 +116,20 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     use:
+      - Desire
+  - name: Microsoft
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - DIRECT
+  - name: Spotify
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - HK
+      - US
       - Desire
 rule-providers:
   reject:
@@ -152,13 +176,14 @@ rules:
   - RULE-SET,google,Google
   - RULE-SET,apple,Apple
   - RULE-SET,icloud,Apple
+  - DOMAIN-KEYWORD,Microsoft,Microsoft
+  - DOMAIN-KEYWORD,bing,DIRECT
+  - DOMAIN-KEYWORD,spotify,Spotify
   - DOMAIN-KEYWORD,qiyi,Bilibili
   - DOMAIN-SUFFIX,qy.net,Bilibili
   - IP-CIDR,101.227.0.0/16,Bilibili,no-resolve
   - IP-CIDR,101.224.0.0/13,Bilibili,no-resolve
   - IP-CIDR,119.176.0.0/12,Bilibili,no-resolve
-  - DOMAIN-KEYWORD,bing,DIRECT
-  - DOMAIN-SUFFIX,microsoft.com,DIRECT
   - DOMAIN-SUFFIX,acg.tv,Bilibili
   - DOMAIN-SUFFIX,acgvideo.com,Bilibili
   - DOMAIN-SUFFIX,b23.tv,Bilibili
