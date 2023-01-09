@@ -329,7 +329,7 @@ rule-providers:
     interval: 86400
   microsoft:
     type: http
-    behavior: classical
+    behavior: domain
     url: https://raw.githubusercontent.com/xxx-x-x/noname/main/Microsoft.txt
     path: ./ruleset/microsoft.yaml
 rules:
