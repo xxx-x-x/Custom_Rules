@@ -178,6 +178,7 @@ rules:
   - RULE-SET,icloud,Apple
   - DOMAIN-KEYWORD,Microsoft,Microsoft
   - DOMAIN-KEYWORD,bing,DIRECT
+  - DOMAIN-KEYWORD,azure,DIRECT
   - DOMAIN-KEYWORD,spotify,Spotify
   - DOMAIN-KEYWORD,qiyi,Bilibili
   - DOMAIN-SUFFIX,qy.net,Bilibili
