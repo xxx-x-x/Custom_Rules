@@ -184,6 +184,7 @@ rules:
   - RULE-SET,apple,Apple
   - RULE-SET,icloud,Apple
   - DOMAIN-KEYWORD,Microsoft,Microsoft
+  - DOMAIN,login.live.com,Microsoft
   - DOMAIN-KEYWORD,bing,Microsoft
   - DOMAIN-KEYWORD,azure,Microsoft
   - DOMAIN-KEYWORD,msecnd,Microsoft
