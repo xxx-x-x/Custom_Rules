@@ -148,6 +148,7 @@ rules:
   - RULE-SET,applications,DIRECT
   - RULE-SET,reject,REJECT
   - RULE-SET,telegramcidr,Telegram
+  - DOMAIN-KEYWORD,google,Google
   - RULE-SET,google,Google
   - RULE-SET,apple,Apple
   - RULE-SET,icloud,Apple
