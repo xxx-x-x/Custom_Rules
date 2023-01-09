@@ -1,0 +1,6 @@
+payload:
+    - '+.bing.com'
+    - '+.Microsoft.com'
+    - '+.live.com'
+    - '+.bing.+'
+    
