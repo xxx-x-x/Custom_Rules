@@ -13,7 +13,7 @@ proxy-providers:
   Nodes:
     type: http
     path: ./profiles/proxies/Nodes.yaml
-    url: https://api.fuqing.ch/sub?target=clash&emoji=true&udp=true&scv=true&new_name=true&filename=WD_Trojan&url=https%3A%2F%2Ffuqing.ch%2Fsubscribe%2Fxvqyn-vi5frutu
+    url: https://api.fuqing.ch/sub?target=clash&emoji=true&udp=true&scv=true&new_name=true&filename=WD_Trojan&url=https%3A%2F%2Ffuqing.ch%2Fsubscribe%2Fymamb-ri9b73uz
     interval: 3600
     health-check:
       enable: true
