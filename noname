@@ -131,6 +131,13 @@ proxy-groups:
       - HK
       - US
       - Desire
+  - name: Github
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - SG
+      - Desire
 rule-providers:
   reject:
     type: http
@@ -181,6 +188,7 @@ rules:
   - DOMAIN-KEYWORD,azure,Microsoft
   - DOMAIN-KEYWORD,msecnd,Microsoft
   - DOMAIN-KEYWORD,spotify,Spotify
+  - DOMAIN-KEYWORD,github,Github
   - DOMAIN-KEYWORD,qiyi,Bilibili
   - DOMAIN-SUFFIX,qy.net,Bilibili
   - IP-CIDR,101.227.0.0/16,Bilibili,no-resolve
