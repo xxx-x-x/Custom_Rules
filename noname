@@ -121,7 +121,7 @@ proxy-groups:
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
-    use:
+    proxies:
       - DIRECT
   - name: Spotify
     type: select
