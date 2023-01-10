@@ -330,7 +330,7 @@ rule-providers:
   microsoft:
     type: http
     behavior: domain
-    url: https://raw.githubusercontent.com/xxx-x-x/noname/main/Microsoft.txt
+    url: http://xx.xx-xzh.xyz:8080/Microsoft.txt
     path: ./ruleset/microsoft.yaml
 rules:
   - IP-CIDR,43.143.131.87/32,DIRECT
