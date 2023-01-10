@@ -1,8 +1,0 @@
-payload:
-  - '+.bing.com'
-  - '+.bing.net'
-  - '+.Microsoft.com'
-  - '+.microsoft.com'
-  - '+.live.com'
-  - '+.xx-xzh.xyz'
-  - '+.hard-yao.xyz'
