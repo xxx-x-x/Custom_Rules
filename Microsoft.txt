@@ -2,3 +2,5 @@ payload:
   - '+.bing.com'
   - '+.Microsoft.com'
   - '+.live.com'
+  - '+.xx-xzh.xyz'
+  - '+.hard-yao.xyz'
