@@ -342,7 +342,6 @@ rules:
   - IP-CIDR,43.143.131.87/32,DIRECT
   - RULE-SET,applications,DIRECT
   - RULE-SET,microsoft,Microsoft
-  - DOMAIN-KEYWORD,steamcontent.com,DIRECT
   - RULE-SET,reject,REJECT
   - RULE-SET,telegramcidr,Telegram
   - DOMAIN-KEYWORD,google,Google
