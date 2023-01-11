@@ -290,6 +290,11 @@ proxy-groups:
     use:
       - SG
       - Desire
+  - name: Steam
+    type: select
+    interval: 300
+    proxies:
+      - DIRECT
 rule-providers:
   reject:
     type: http
@@ -330,12 +335,17 @@ rule-providers:
   microsoft:
     type: http
     behavior: domain
-    url: http://xx.xx-xzh.xyz:8080/Microsoft.txt
+    url: http://xx.xx-xzh.xyz:8080/microsoft.txt
     path: ./ruleset/microsoft.yaml
+  steam:
+    type: http
+    behavior: domain
+    url: http://xx.xx-xzh.xyz:8080/steam.txt
 rules:
   - IP-CIDR,43.143.131.87/32,DIRECT
   - RULE-SET,applications,DIRECT
   - RULE-SET,microsoft,Microsoft
+  - RULE-SET,steam,Steam
   - RULE-SET,reject,REJECT
   - RULE-SET,telegramcidr,Telegram
   - DOMAIN-KEYWORD,google,Google
