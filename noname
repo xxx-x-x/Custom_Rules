@@ -293,6 +293,7 @@ proxy-groups:
   - name: Steam
     type: select
     interval: 300
+    url: http://www.gstatic.com/generate_204
     proxies:
       - DIRECT
 rule-providers:
