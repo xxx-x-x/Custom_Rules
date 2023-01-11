@@ -342,6 +342,7 @@ rule-providers:
     type: http
     behavior: domain
     url: http://xx.xx-xzh.xyz:8080/steam.txt
+    path: ./ruleset/steam.yaml
 rules:
   - IP-CIDR,43.143.131.87/32,DIRECT
   - RULE-SET,applications,DIRECT
