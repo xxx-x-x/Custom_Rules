@@ -296,6 +296,15 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     proxies:
       - DIRECT
+  - name: Epic
+    type: select
+    interval: 300
+    url: http://www.gstatic.com/generate_204
+    use:
+      - HK
+      - Desire
+    proxies:
+      - DIRECT
 rule-providers:
   reject:
     type: http
