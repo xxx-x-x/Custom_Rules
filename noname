@@ -305,6 +305,15 @@ proxy-groups:
       - Desire
     proxies:
       - DIRECT
+  - name: Nvidia
+    type: select
+    interval: 300
+    url: http://www.gstatic.com/generate_204
+    use:
+      - HK
+      - Desire
+    proxies:
+      - DIRECT
 rule-providers:
   reject:
     type: http
@@ -360,6 +369,8 @@ rules:
   - RULE-SET,icloud,Apple
   - DOMAIN-KEYWORD,spotify,Spotify
   - DOMAIN-KEYWORD,github,Github
+  - DOMAIN-SUFFIX,geforce.com,Nvidia
+  - DOMAIN-SUFFIX,nvidia.com,Nvidia
   - DOMAIN-KEYWORD,qiyi,Bilibili
   - DOMAIN-SUFFIX,qy.net,Bilibili
   - IP-CIDR,101.227.0.0/16,Bilibili,no-resolve
