@@ -372,6 +372,7 @@ rules:
   - DOMAIN-SUFFIX,geforce.com,Nvidia
   - DOMAIN-SUFFIX,nvidia.com,Nvidia
   - DOMAIN-SUFFIX,geforce.cn,Nvidia
+  - DOMAIN-SUFFIX,epicgames.com,Epic
   - DOMAIN-KEYWORD,qiyi,Bilibili
   - DOMAIN-SUFFIX,qy.net,Bilibili
   - IP-CIDR,101.227.0.0/16,Bilibili,no-resolve
