@@ -326,7 +326,7 @@ rule-providers:
     behavior: domain
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt
     path: ./ruleset/icloud.yaml
-    interval: 86400
+    interval: 8640eeforce0
   apple:
     type: http
     behavior: domain
@@ -371,6 +371,7 @@ rules:
   - DOMAIN-KEYWORD,github,Github
   - DOMAIN-SUFFIX,geforce.com,Nvidia
   - DOMAIN-SUFFIX,nvidia.com,Nvidia
+  - DOMAIN-SUFFIX,geforce.cn,Nvidia
   - DOMAIN-KEYWORD,qiyi,Bilibili
   - DOMAIN-SUFFIX,qy.net,Bilibili
   - IP-CIDR,101.227.0.0/16,Bilibili,no-resolve
