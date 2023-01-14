@@ -326,7 +326,7 @@ rule-providers:
     behavior: domain
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt
     path: ./ruleset/icloud.yaml
-    interval: 8640eeforce0
+    interval: 86400
   apple:
     type: http
     behavior: domain
