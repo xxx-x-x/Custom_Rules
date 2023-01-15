@@ -165,7 +165,7 @@ proxy-providers:
   Nodes:
     type: http
     path: ./profiles/proxies/Nodes.yaml
-    url: https://api.fuqing.ch/sub?target=clash&emoji=true&udp=true&scv=true&new_name=true&filename=WD_Trojan&url=https%3A%2F%2Ffuqing.ch%2Fsubscribe%2Fymamb-ri9b73uz
+    url: https://api.fuqing.ch/sub?target=clash&emoji=true&udp=true&scv=true&new_name=true&filename=WD_Trojan&url=https%3A%2F%2Ffuqing.ch%2Fsubscribe%2Fybvbb-ej3rvsql
     interval: 3600
     health-check:
       enable: true
@@ -174,7 +174,7 @@ proxy-providers:
   HK:
     type: http
     path: ./profiles/proxies/HK.yaml
-    url: https://api.fuqing.ch/sub?target=clash&emoji=true&udp=true&scv=true&new_name=true&filename=WD_Trojan&url=https%3A%2F%2Ffuqing.ch%2Fsubscribe%2Fymamb-ri9b73uz
+    url: https://api.fuqing.ch/sub?target=clash&emoji=true&udp=true&scv=true&new_name=true&filename=WD_Trojan&url=https%3A%2F%2Ffuqing.ch%2Fsubscribe%2Fybvbb-ej3rvsql
     interval: 3600
     filter: Hong Kong
     health-check:
@@ -184,7 +184,7 @@ proxy-providers:
   SG:
     type: http
     path: ./profiles/proxies/SG.yaml
-    url: https://api.fuqing.ch/sub?target=clash&emoji=true&udp=true&scv=true&new_name=true&filename=WD_Trojan&url=https%3A%2F%2Ffuqing.ch%2Fsubscribe%2Fymamb-ri9b73uz
+    url: https://api.fuqing.ch/sub?target=clash&emoji=true&udp=true&scv=true&new_name=true&filename=WD_Trojan&url=https%3A%2F%2Ffuqing.ch%2Fsubscribe%2Fybvbb-ej3rvsql
     interval: 3600
     filter: Singapore
     health-check:
@@ -194,7 +194,7 @@ proxy-providers:
   US:
     type: http
     path: ./profiles/proxies/United States.yaml
-    url: https://api.fuqing.ch/sub?target=clash&emoji=true&udp=true&scv=true&new_name=true&filename=WD_Trojan&url=https%3A%2F%2Ffuqing.ch%2Fsubscribe%2Fymamb-ri9b73uz
+    url: https://api.fuqing.ch/sub?target=clash&emoji=true&udp=true&scv=true&new_name=true&filename=WD_Trojan&url=https%3A%2F%2Ffuqing.ch%2Fsubscribe%2Fybvbb-ej3rvsql
     interval: 3600
     filter: United States
     health-check:
@@ -204,7 +204,7 @@ proxy-providers:
   TW:
     type: http
     path: ./profiles/proxies/Taiwan.yaml
-    url: https://api.fuqing.ch/sub?target=clash&emoji=true&udp=true&scv=true&new_name=true&filename=WD_Trojan&url=https%3A%2F%2Ffuqing.ch%2Fsubscribe%2Fymamb-ri9b73uz
+    url: https://api.fuqing.ch/sub?target=clash&emoji=true&udp=true&scv=true&new_name=true&filename=WD_Trojan&url=https%3A%2F%2Ffuqing.ch%2Fsubscribe%2Fybvbb-ej3rvsql
     interval: 3600
     filter: Taiwan
     health-check:
@@ -214,7 +214,7 @@ proxy-providers:
   Desire:
     type: http
     path: ./profiles/proxies/Desire.yaml
-    url: https://api.fuqing.ch/sub?target=clash&emoji=true&udp=true&scv=true&new_name=true&filename=WD_Trojan&url=https%3A%2F%2Ffuqing.ch%2Fsubscribe%2Fymamb-ri9b73uz
+    url: https://api.fuqing.ch/sub?target=clash&emoji=true&udp=true&scv=true&new_name=true&filename=WD_Trojan&url=https%3A%2F%2Ffuqing.ch%2Fsubscribe%2Fybvbb-ej3rvsql
     interval: 3600
     filter: Expire
     health-check:
