@@ -294,6 +294,9 @@ proxy-groups:
     type: select
     interval: 300
     url: http://www.gstatic.com/generate_204
+    use:
+      - HK
+      - Desire
     proxies:
       - DIRECT
   - name: Epic
@@ -356,10 +359,16 @@ rule-providers:
     behavior: domain
     url: http://43.143.131.87:8080/microsoft.txt
     path: ./ruleset/microsoft.yaml
+  steam:
+    type: http
+    behavior: domain
+    url: http://43.143.131.87:8080/steam.txt
+    path: ./ruleset/steam.yaml
 rules:
   - IP-CIDR,43.143.131.87/32,DIRECT
   - DOMAIN-SUFFIX,xx-xzh.xyz,DIRECT
   - RULE-SET,applications,DIRECT
+  - RULE-SET,steam,Steam
   - RULE-SET,microsoft,Microsoft
   - RULE-SET,reject,REJECT
   - RULE-SET,telegramcidr,Telegram
@@ -376,7 +385,6 @@ rules:
   - DOMAIN-KEYWORD,qiyi,Bilibili
   - DOMAIN-SUFFIX,qy.net,Bilibili
   - IP-CIDR,101.227.0.0/16,Bilibili,no-resolve
-  - IP-CIDR,101.224.0.0/13,Bilibili,no-resolve
   - IP-CIDR,119.176.0.0/12,Bilibili,no-resolve
   - DOMAIN-SUFFIX,acg.tv,Bilibili
   - DOMAIN-SUFFIX,acgvideo.com,Bilibili
