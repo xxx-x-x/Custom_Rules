@@ -368,7 +368,7 @@ rules:
   - IP-CIDR,43.143.131.87/32,DIRECT
   - DOMAIN-SUFFIX,xx-xzh.xyz,DIRECT
   - RULE-SET,applications,DIRECT
-  - RULE-SET,steam,Steam
+  - DOMAIN-SUFFIX,steamchina.com,Steam
   - RULE-SET,microsoft,Microsoft
   - RULE-SET,reject,REJECT
   - RULE-SET,telegramcidr,Telegram
