@@ -359,7 +359,6 @@ rule-providers:
     behavior: domain
     url: http://yy.xx-xzh.xyz/microsoft.txt
     path: ./ruleset/microsoft.yaml
-    
   steam:
     type: http
     behavior: domain
