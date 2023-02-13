@@ -176,7 +176,7 @@ proxy-providers:
     path: ./profiles/1/proxies/HK.yaml
     url: https://xn--4gq62f52gdss.com/api/v1/client/subscribe?token=a07c982a88f3806520dc8967d4541a53&flag=clash 
     interval: 3600
-    filter: HK
+    filter: 'HK'
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -186,7 +186,7 @@ proxy-providers:
     path: ./profiles/1/proxies/SG.yaml
     url: https://api.fuqing.ch/sub?target=clash&emoji=true&udp=true&scv=true&new_name=true&filename=WD_Trojan&url=https%3A%2F%2Ffuqing.ch%2Fsubscribe%2Fybvbb-ej3rvsql
     interval: 3600
-    filter: SG
+    filter: 'SG'
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -196,7 +196,7 @@ proxy-providers:
     path: ./profiles/1/proxies/United States.yaml
     url: https://api.fuqing.ch/sub?target=clash&emoji=true&udp=true&scv=true&new_name=true&filename=WD_Trojan&url=https%3A%2F%2Ffuqing.ch%2Fsubscribe%2Fybvbb-ej3rvsql
     interval: 3600
-    filter: US
+    filter: 'US'
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -206,7 +206,7 @@ proxy-providers:
     path: ./profiles/1/proxies/Taiwan.yaml
     url: https://api.fuqing.ch/sub?target=clash&emoji=true&udp=true&scv=true&new_name=true&filename=WD_Trojan&url=https%3A%2F%2Ffuqing.ch%2Fsubscribe%2Fybvbb-ej3rvsql
     interval: 3600
-    filter: UN
+    filter: 'UN'
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
