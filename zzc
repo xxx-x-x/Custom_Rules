@@ -1,0 +1,397 @@
+mixed-port: 7890
+allow-lan: true
+external-controller: 127.0.0.1:51558
+hosts:
+  services.googleapis.cn: 142.250.196.131
+  www.google.cn: 142.250.196.131
+profile:
+  tracing: true
+experimental:
+  sniff-tls-sni: true
+dns:
+  enable: true
+  listen: 127.0.0.1:8853
+  default-nameserver:
+    - 223.5.5.5
+    - 8.8.4.4
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - "*.time.edu.cn"
+    - "*.ntp.org.cn"
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - music.163.com
+    - "*.music.163.com"
+    - "*.126.net"
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - "*.kuwo.cn"
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - "*.y.qq.com"
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - "*.xiami.com"
+    - "*.music.migu.cn"
+    - music.migu.cn
+    - +.msftconnecttest.com
+    - +.msftncsi.com
+    - msftconnecttest.com
+    - msftncsi.com
+    - localhost.ptlogin2.qq.com
+    - localhost.sec.qq.com
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - xnotify.xboxlive.com
+    - +.ipv6.microsoft.com
+    - +.battlenet.com.cn
+    - +.wotgame.cn
+    - +.wggames.cn
+    - +.wowsgame.cn
+    - +.wargaming.net
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - +.stun.*.*
+    - +.stun.*.*.*
+    - +.stun.*.*.*.*
+    - heartbeat.belkin.com
+    - "*.linksys.com"
+    - "*.linksyssmartwifi.com"
+    - "*.router.asus.com"
+    - mesu.apple.com
+    - swscan.apple.com
+    - swquery.apple.com
+    - swdownload.apple.com
+    - swcdn.apple.com
+    - swdist.apple.com
+    - lens.l.google.com
+    - stun.l.google.com
+    - "*.square-enix.com"
+    - "*.finalfantasyxiv.com"
+    - "*.ffxiv.com"
+    - "*.ff14.sdo.com"
+    - ff.dorado.sdo.com
+    - "*.mcdn.bilivideo.cn"
+    - +.media.dssott.com
+    - +.pvp.net
+  nameserver:
+    - 114.114.114.114
+    - tls://223.5.5.5:853
+    - tls://223.6.6.6:853
+    - tls://1.12.12.12
+    - tls://120.53.53.53
+  fallback:
+    - https://1.0.0.1/dns-query
+    - https://public.dns.iij.jp/dns-query
+    - tls://8.8.4.4:853
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+      - 127.0.0.1/32
+    domain:
+      - +.facebook.com
+      - +.twitter.com
+      - +.google.com
+      - +.googleapis.com
+      - +.google.cn
+      - +.googleapis.cn
+      - +.xn--ngstr-lra8j.com
+      - +.googlevideo.com
+      - +.gvt1.com
+      - +.gmail.com
+      - +.youtube.com
+      - +.youtu.be
+      - +.gvt0.com
+      - +.gvt2.com
+      - +.gvt3.com
+      - +.gstatic.com
+      - +.265.com
+      - +.2mdn.net
+      - +.app-measurement.com
+      - +.c.admob.com
+      - +.clickserve.dartsearch.net
+      - +.crl.pki.goog
+      - +.doubleclick.net
+      - +.firebase-settings.crashlytics.com
+      - +.google-analytics.com
+      - +.googleadservices.com
+      - +.googleanalytics.com
+      - +.googleoptimize.com
+      - +.googlesyndication.com
+      - +.googletagmanager.com
+      - +.googletagservices.com
+secret: b0b0d359-8482-40a2-acce-0a4c47b8c260
+proxy-providers:
+  Nodes:
+    type: http
+    path: ./profiles/proxies/Nodes.yaml
+    url: https://xn--4gq62f52gdss.com/api/v1/client/subscribe?token=a07c982a88f3806520dc8967d4541a53
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  HK:
+    type: http
+    path: ./profiles/proxies/HK.yaml
+    url: https://xn--4gq62f52gdss.com/api/v1/client/subscribe?token=a07c982a88f3806520dc8967d4541a53
+    interval: 3600
+    filter: 香港
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  SG:
+    type: http
+    path: ./profiles/proxies/SG.yaml
+    url: https://xn--4gq62f52gdss.com/api/v1/client/subscribe?token=a07c982a88f3806520dc8967d4541a53
+    interval: 3600
+    filter: 新加坡
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  US:
+    type: http
+    path: ./profiles/proxies/United States.yaml
+    url: https://xn--4gq62f52gdss.com/api/v1/client/subscribe?token=a07c982a88f3806520dc8967d4541a53
+    interval: 3600
+    filter: 美国
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TW:
+    type: http
+    path: ./profiles/proxies/Taiwan.yaml
+    url: https://xn--4gq62f52gdss.com/api/v1/client/subscribe?token=a07c982a88f3806520dc8967d4541a53
+    interval: 3600
+    filter: 台湾 
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
+proxy-groups:
+  - name: Proxy
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - Nodes
+  - name: Bilibili
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - HK
+      - TW
+    proxies:
+      - DIRECT
+  - name: Telegram
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - SG
+  - name: Apple
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - US
+  - name: Google
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - US
+  - name: Youtube
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - HK
+      - TW
+      - Desire
+  - name: Netflix
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - Desire
+  - name: Microsoft
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - DIRECT
+  - name: Spotify
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - HK
+      - US
+      - Desire
+  - name: Github
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - SG
+      - Desire
+  - name: Steam
+    type: select
+    interval: 300
+    url: http://www.gstatic.com/generate_204
+    use:
+      - HK
+      - Desire
+    proxies:
+      - DIRECT
+  - name: Epic
+    type: select
+    interval: 300
+    url: http://www.gstatic.com/generate_204
+    use:
+      - HK
+      - Desire
+    proxies:
+      - DIRECT
+  - name: Nvidia
+    type: select
+    interval: 300
+    url: http://www.gstatic.com/generate_204
+    use:
+      - HK
+      - Desire
+    proxies:
+      - DIRECT
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
+    path: ./ruleset/reject.yaml
+    interval: 86400
+  icloud:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt
+    path: ./ruleset/icloud.yaml
+    interval: 86400
+  apple:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt
+    path: ./ruleset/apple.yaml
+    interval: 86400
+  google:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt
+    path: ./ruleset/google.yaml
+    interval: 86400
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt
+    path: ./ruleset/telegramcidr.yaml
+    interval: 86400
+  applications:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
+    path: ./ruleset/applications.yaml
+    interval: 86400
+  microsoft:
+    type: http
+    behavior: domain
+    url: http://yy.xx-xzh.xyz/microsoft.txt
+    path: ./ruleset/microsoft.yaml
+
+  steam:
+    type: http
+    behavior: domain
+    url: http://yy.xx-xzh.xyz/steam.txt
+    path: ./ruleset/steam.yaml
+rules:
+  - IP-CIDR,43.143.131.87/32,DIRECT
+  - DOMAIN-SUFFIX,xx-xzh.xyz,DIRECT
+  - RULE-SET,applications,DIRECT
+  - RULE-SET,steam,Steam
+  - RULE-SET,microsoft,Microsoft
+  - RULE-SET,reject,REJECT
+  - RULE-SET,telegramcidr,Telegram
+  - DOMAIN-KEYWORD,google,Google
+  - RULE-SET,google,Google
+  - RULE-SET,apple,Apple
+  - RULE-SET,icloud,Apple
+  - DOMAIN-KEYWORD,spotify,Spotify
+  - DOMAIN-KEYWORD,github,Github
+  - DOMAIN-SUFFIX,geforce.com,Nvidia
+  - DOMAIN-SUFFIX,nvidia.com,Nvidia
+  - DOMAIN-SUFFIX,geforce.cn,Nvidia
+  - DOMAIN-SUFFIX,epicgames.com,Epic
+  - DOMAIN-KEYWORD,qiyi,Bilibili
+  - DOMAIN-SUFFIX,qy.net,Bilibili
+  - IP-CIDR,101.227.0.0/16,Bilibili,no-resolve
+  - IP-CIDR,119.176.0.0/12,Bilibili,no-resolve
+  - DOMAIN-SUFFIX,acg.tv,Bilibili
+  - DOMAIN-SUFFIX,acgvideo.com,Bilibili
+  - DOMAIN-SUFFIX,b23.tv,Bilibili
+  - DOMAIN-SUFFIX,bigfun.cn,Bilibili
+  - DOMAIN-SUFFIX,bigfunapp.cn,Bilibili
+  - DOMAIN-SUFFIX,biliapi.com,Bilibili
+  - DOMAIN-SUFFIX,biliapi.net,Bilibili
+  - DOMAIN-SUFFIX,bilibili.com,Bilibili
+  - DOMAIN-SUFFIX,bilibili.tv,Bilibili
+  - DOMAIN-SUFFIX,biligame.com,Bilibili
+  - DOMAIN-SUFFIX,biligame.net,Bilibili
+  - DOMAIN-SUFFIX,bilivideo.com,Bilibili
+  - DOMAIN-SUFFIX,hdslb.com,Bilibili
+  - DOMAIN-SUFFIX,im9.com,Bilibili
+  - DOMAIN,upos-hz-mirrorakam.akamaized.net,Bilibili
+  - GEOIP,CN,DIRECT
+  - MATCH,Proxy
