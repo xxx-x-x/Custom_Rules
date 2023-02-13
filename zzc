@@ -164,8 +164,8 @@ secret: b0b0d359-8482-40a2-acce-0a4c47b8c260
 proxy-providers:
   Nodes:
     type: http
-    path: ./profiles/1/proxies/Nodes.yaml
-    url: https://xn--4gq62f52gdss.com/api/v1/client/subscribe?token=a07c982a88f3806520dc8967d4541a53
+    path: ./profiles/proxies/Nodes.yaml
+    url: https://xn--4gq62f52gdss.com/api/v1/client/subscribe?token=a07c982a88f3806520dc8967d4541a53 
     interval: 3600
     health-check:
       enable: true
@@ -173,45 +173,54 @@ proxy-providers:
       interval: 300
   HK:
     type: http
-    path: ./profiles/1/proxies/HK.yaml
+    path: ./profiles/proxies/HK.yaml
     url: https://xn--4gq62f52gdss.com/api/v1/client/subscribe?token=a07c982a88f3806520dc8967d4541a53
     interval: 3600
-    filter: 香港
+    filter: HK
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
   SG:
     type: http
-    path: ./profiles/1/proxies/SG.yaml
+    path: ./profiles/proxies/SG.yaml
     url: https://xn--4gq62f52gdss.com/api/v1/client/subscribe?token=a07c982a88f3806520dc8967d4541a53
     interval: 3600
-    filter: 新加坡
+    filter: SG
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
   US:
     type: http
-    path: ./profiles/1/proxies/United States.yaml
+    path: ./profiles/proxies/United States.yaml
     url: https://xn--4gq62f52gdss.com/api/v1/client/subscribe?token=a07c982a88f3806520dc8967d4541a53
     interval: 3600
-    filter: 美国
+    filter: US
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
   TW:
     type: http
-    path: ./profiles/1/proxies/Taiwan.yaml
+    path: ./profiles/proxies/Taiwan.yaml
     url: https://xn--4gq62f52gdss.com/api/v1/client/subscribe?token=a07c982a88f3806520dc8967d4541a53
     interval: 3600
-    filter: 台湾 
+    filter: UN
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_20
+  Desire:
+    type: http
+    path: ./profiles/proxies/Desire.yaml
+    url: https://xn--4gq62f52gdss.com/api/v1/client/subscribe?token=a07c982a88f3806520dc8967d4541a53
+    interval: 3600
+    filter: UN
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
-  proxy-groups:
+proxy-groups:
   - name: Proxy
     type: select
     url: http://www.gstatic.com/generate_204
