@@ -357,13 +357,13 @@ rule-providers:
   microsoft:
     type: http
     behavior: domain
-    url: http://yy.xx-xzh.xyz/microsoft.txt
+    url: https://yy.xx-xzh.xyz/microsoft.txt
     path: ./ruleset/microsoft.yaml
 
   steam:
     type: http
     behavior: domain
-    url: http://yy.xx-xzh.xyz/steam.txt
+    url: https://yy.xx-xzh.xyz/steam.txt
     path: ./ruleset/steam.yaml
 rules:
   - IP-CIDR,43.143.131.87/32,DIRECT
